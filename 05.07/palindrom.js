@@ -1,4 +1,4 @@
-let str = 'k abAk';
+let str = 'А роза упала на лапу Азора';
 function IsItPalindrom(str){
 	str.split(); //строка разбивается на массив символов
 	str1=[];
