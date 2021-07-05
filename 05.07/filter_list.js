@@ -4,7 +4,7 @@ function filter_list(arr){
 	let filtered_arr=[];
 	
 	for(let i=0; i<arr.length; i++){
-		if(typeof(arr[i])!='string'){
+		if(typeof(arr[i])=='number'){
 			filtered_arr.push(arr[i]);
 		}
 	}
