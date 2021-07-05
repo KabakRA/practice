@@ -3,11 +3,11 @@ let array = [1, 2, 3, 'a', 'f', 0, 'g', 8, 'e'];
 function filter_list(arr){
 	let filtered_arr=[];
 	
-	for(let i=0; i<arr.length; i++){
-		if(typeof(arr[i])=='number'){
-			filtered_arr.push(arr[i]);
+	arr.forEach((item)=>{
+		if(typeof(item)=='number'){
+			filtered_arr.push(item);
 		}
-	}
+	})
 	return(filtered_arr);
 }
 
