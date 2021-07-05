@@ -8,8 +8,10 @@ function RemoveMin(arr){
 			min=arr[i];
 			imin=i;
 		}
-		arr.splice(imin, 1); //удалить 1 элемент, начиная с imin
+		
 	}
+	arr.splice(imin, 1); //удалить 1 элемент, начиная с imin
+
 	return(arr);
 }
 
