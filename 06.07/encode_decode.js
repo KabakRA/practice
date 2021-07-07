@@ -10,15 +10,6 @@ function encode(str){
 		if (arr[i] == 'u') {arr[i]='5'};
 	}
 	
-	//а так почему-то не работает
-	/*arr.forEach((item) =>{
-		if (item == 'a') {item='1'};
-		if (item == 'e') {item='2'};
-		if (item == 'i') {item='3'};
-		if (item == 'o') {item='4'};
-		if (item == 'u') {item='5'};
-	})*/
-	
 	str = arr.join('');
 	return(str);
 }
