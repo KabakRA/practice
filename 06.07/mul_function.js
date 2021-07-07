@@ -1,8 +1,16 @@
-function multiply(a,b,c){
-	let result;
-	result = a*b*c;
-	return(result)
+const _mul = (x, y, z) => x * y * z;
+function curry(fn) {
+  const N = fn.length;
+  function innerFn(n, args) {
+    return function actualInnerFn(a) {
+      if(n <= 1) {
+        return fn(...args, a);
+      }
+     return innerFn(n - 1, [...args, a]);
+    }
+  }
+  return innerFn(N, [])
 }
-
-console.log(multiply (2,3,4));
-console.log(multiply (4,3,4));
+const mul = curry(_mul);
+console.log(mul(2)(3)(4)); 
+console.log(mul(4)(3)(4)); 
